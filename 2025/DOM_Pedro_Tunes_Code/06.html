@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="lampada-off.jpg" onclick="muda(this)" style="cursor: pointer;">
+    <script>
+        let aceso = false;
+        function muda(img){
+            if(aceso){
+                img.src="lampada-off.jpg"
+            }else{
+                img.src="lampada-on.jpg"
+            }
+            aceso = !aceso
+        }
+    </script>
+</body>
+</html>
